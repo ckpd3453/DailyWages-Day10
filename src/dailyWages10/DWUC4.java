@@ -1,44 +1,47 @@
 package dailyWages10;
 
-class Attendance {
+class Attend {
 
 	void wages() {
-
-		// variable declaration
-		int isPartTime = 1;
-		int isFullTime = 2;
+		// variable
 		int empRatePerHr = 20;
-		int empHrs;
-		int salary;
+		int empHrs = 0;
+		double salary = 0;
 
-		// random to check whether full time or part time or absent
+		// Random check for attendance
 		double randomCheck = Math.floor(Math.random() * 10) % 3;
+		int i = (int) randomCheck;
 
-		// Conditions to find employee hrs
-		if (isFullTime == randomCheck) {
+		// switch case
+		switch (i) {
+
+		case 2:
 			System.out.println("Employee is FullTime");
 			empHrs = 8;
-		} else if (isPartTime == randomCheck) {
+			break;
+		case 1:
 			System.out.println("Employee is PartTime");
 			empHrs = 4;
-		} else {
+			break;
+		case 0:
 			System.out.println("Employee is Absent");
 			empHrs = 0;
+			break;
 		}
 
-		// Calculating Salary for number of Hrs
+		// print employee salary
 		salary = empHrs * empRatePerHr;
 		System.out.println("Employee Salary" + salary);
 	}
 }
 
-public class DWUC3 {
+public class DWUC4 {
 
 	public static void main(String[] args) {
 		// creating an object
-		Attendance emp = new Attendance();
+		Attend emp = new Attend();
 
-		// Calling method to execute
+		// calling method
 		emp.wages();
 	}
 
