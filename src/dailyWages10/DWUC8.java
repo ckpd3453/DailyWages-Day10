@@ -1,6 +1,6 @@
 package dailyWages10;
 
-class Unit {
+class Multi {
 
 	void wages() {
 		// Variables
@@ -19,38 +19,50 @@ class Unit {
 			int i = (int) randomCheck;
 			switch (i) {
 			case 2:
-				System.out.println("Employee is FullTime");
+				// System.out.println("Employee is FullTime");
 				empHrs = 8;
 				break;
 			case 1:
-				System.out.println("Employee is PartTime");
+				// System.out.println("Employee is PartTime");
 				empHrs = 4;
 				break;
 			case 0:
-				System.out.println("Employee is Absent");
+				// System.out.println("Employee is Absent");
 				empHrs = 0;
 				break;
 			}
 
 			// Total Hour calculation
 			totalEmpHr = totalEmpHr + empHrs;
-			System.out.println(totalEmpHr);
+			// System.out.println(totalEmpHr);
 		}
 		// calculating Total Salary
 		totalsalary = totalEmpHr * empRatePerHr;
 
 		System.out.println("Employee total Salary" + totalsalary);
+		System.out.println();
 	}
 }
 
-public class DWUC7 {
+public class DWUC8 {
 
 	public static void main(String[] args) {
 		// creating an object
-		Unit salary = new Unit();
+		Multi Google = new Multi();
 
+		System.out.println("Employee wages of Google :");
 		// calling method
-		salary.wages();
+		Google.wages();
+
+		Multi HCL = new Multi();
+		System.out.println("Employee wages of HCL :");
+		// calling method
+		HCL.wages();
+
+		Multi BridgeLabz = new Multi();
+		System.out.println("Employee wages of BridgeLabz :");
+		// calling method
+		BridgeLabz.wages();
 
 	}
 
