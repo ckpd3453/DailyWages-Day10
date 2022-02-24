@@ -1,6 +1,6 @@
 package dailyWages10;
 
-class Staff {
+class Unit {
 
 	void wages() {
 		// Variables
@@ -43,11 +43,11 @@ class Staff {
 	}
 }
 
-public class DWUC6 {
+public class DWUC7 {
 
 	public static void main(String[] args) {
 		// creating an object
-		Staff salary = new Staff();
+		Unit salary = new Unit();
 
 		// calling method
 		salary.wages();
