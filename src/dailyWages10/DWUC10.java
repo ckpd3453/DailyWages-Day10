@@ -78,15 +78,15 @@ public class DWUC10 {
 	public static void main(String[] args) {
 		System.out.println("How many company data you want to Enter ");
 
-		Company mahindra = new Company();
+		Company comp = new Company();
 
-		Scanner p1 = new Scanner(System.in);
-		p1.toString();
-		int noOfCompanys = p1.nextInt();
+		Scanner no = new Scanner(System.in);
+		no.toString();
+		int noOfCompanys = no.nextInt();
 
 		for (int i = 1; i <= noOfCompanys; i++) {
 
-			mahindra.check();
+			comp.check();
 
 		}
 	}
